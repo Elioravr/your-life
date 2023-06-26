@@ -1,0 +1,131 @@
+$week-width: 5.3px;
+$weeks-container-width: 350px;
+
+.App {
+  .app-title {
+    font-size: 24px;
+    font-family: 'Belanosima', sans-serif;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4797ff;
+    color: white;
+    height: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .main-container {
+    margin-top: 70px;
+    padding: 10px;
+
+    .form-container {
+      .date-input {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    .life-container {
+      display: flex;
+
+      .years-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 30px;
+
+        .year-text {
+          display: flex;
+          font-size: 10px;
+          position: absolute;
+          left: 0;
+
+          &.year-0 {
+            top: 10px;
+          }
+          &.year-5 {
+            top: 50.15px;
+          }
+          &.year-10 {
+            top: 90.3px;
+          }
+          &.year-15 {
+            top: 130.45px;
+          }
+          &.year-20 {
+            top: 170.6px;
+          }
+          &.year-25 {
+            top: 210.75px;
+          }
+          &.year-30 {
+            top: 250.9px;
+          }
+          &.year-35 {
+            top: 291.05px;
+          }
+          &.year-40 {
+            top: 331.2px;
+          }
+          &.year-45 {
+            top: 371.35px;
+          }
+          &.year-50 {
+            top: 411.5px;
+          }
+          &.year-55 {
+            top: 451.65px;
+          }
+          &.year-60 {
+            top: 491.8px;
+          }
+          &.year-65 {
+            top: 531.95px;
+          }
+          &.year-70 {
+            top: 572.1px;
+          }
+          &.year-75 {
+            top: 612.25px;
+          }
+          &.year-80 {
+            top: 652.4px;
+          }
+          &.year-85 {
+            top: 692.55px;
+          }
+          &.year-90 {
+            top: 732.7px;
+          }
+          &.year-95 {
+            top: 772.85px;
+          }
+        }
+      }
+
+      .weeks-container {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: $weeks-container-width;
+
+        .week {
+          margin: 1px;
+          border: 1px solid black;
+          height: $week-width;
+          width: $week-width;
+          border-radius: 50%;
+
+          &.passed {
+            background-color: #4797ff;
+          }
+        }
+      }
+    }
+  }
+}
